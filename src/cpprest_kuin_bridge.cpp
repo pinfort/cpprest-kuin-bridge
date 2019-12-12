@@ -7,9 +7,10 @@ BOOL WINAPI DllMain(HINSTANCE, DWORD, LPVOID)
 
 extern "C" _declspec(dllexport) U8* HttpGet(U8* host_name, U8* path)
 {
-	wprintf(L"%lls\n", KuinStrToWStr(host_name).c_str());
-	//http_client client(L"https://pinfort.me"); //ƒRƒƒ“ƒg‚ğŠO‚·‚Æ‚È‚º‚©“®‚©‚È‚¢
+	wprintf(L"%lls\n", KuinStrToWStr(host_name).c_str()); //Kuin ã‹ã‚‰Cppã«æ–‡å­—åˆ—ã‚’æ¸¡ã›ã‚‹
 
-	const std::wstring body(LR"(test string)");
+	//http_client client(U("http://www.bing.com/")); //ã‚³ãƒ¡ãƒ³ãƒˆã‚’å¤–ã™ã¨ãªãœã‹å‹•ã‹ãªã„
+
+	const std::wstring body(LR"(test string)"); //Cppã‹ã‚‰Kuinã«æ–‡å­—åˆ—ã‚’æ¸¡ã›ã‚‹
 	return WStrToKuinStr(body);
 }
