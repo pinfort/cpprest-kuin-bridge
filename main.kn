@@ -1,0 +1,6 @@
+func[cpprest_kuin_bridge.dll, HttpGet]HttpGet(host_name: []char, path: []char): []char
+end func
+
+func main()
+	do cui@print(@HttpGet("pinfort.me", "/"))
+end func
