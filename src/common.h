@@ -3,19 +3,9 @@
 #pragma comment(lib, "ucrt.lib")
 #pragma comment(lib, "vcruntime.lib")
 
-#include <Windows.h>
-
-#include <cpprest/http_client.h>
-#include <cpprest/filestream.h>
 #include "kuin_type_bridge.h"
 
 #define KUIN_MAX_PATH (512)
-
-using namespace utility;                    // Common utilities like string conversions
-using namespace web;                        // Common features like URIs.
-using namespace web::http;                  // Common HTTP functionality
-using namespace web::http::client;          // HTTP client features
-using namespace concurrency::streams;       // Asynchronous streams
 
 typedef unsigned char Bool;
 typedef wchar_t Char;
