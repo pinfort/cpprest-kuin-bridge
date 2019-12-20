@@ -1,4 +1,4 @@
-func[cpprest_kuin_bridge.dll, HttpGet]HttpGet(host_name: []char, path: []char): []char
+func[cpprest_kuin_bridge.dll, HttppGet]HttpGet(host_name: []char, path: []char): []char
 end func
 
 func main()
